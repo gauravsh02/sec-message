@@ -4,3 +4,5 @@ It is WebApp to encode and decode plain text messages, using [cyphering encoding
 
 
 vist [SecMessage](http://ryuz.heliohost.org/)
+
+:penguin: You can also leave Feedback or suggestion at my [E-mail](mailto:gauravashankar.bk@gmail.com) 
