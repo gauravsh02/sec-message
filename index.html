@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gaurav Shankar" />
+    <link rel="shortcut icon" href="icon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <title>SecMessage</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="#">SecMessage</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="#section1">Encode</a></li>
+                    <li><a href="#section2">Decode</a></li>
+                    <li><a href="#section3">About</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="visible-xm hidden-sm hidden-md hidden-lg img4 ho"></div>
+    <div class="visible-sm visible-md visible-lg img1 hi"></div>
+    <section class="section section-part1" id="section1">
+        <div class="row">
+            <div class="col-xs-12 col-md-offset-3 col-md-6">
+                <div class="form-group">
+                    <label for="description"> Message to Encode</label>
+                    <textarea class="form-control" id="input" placeholder="Enter Your Message"></textarea><br>
+                    <input type="text" id="pass" placeholder="Password">
+                    <div class="hidden-sm"><br></div>
+                    <button class="btn btn-primary" onclick="enco()">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-offset-3 col-md-6"><p id="emess">   </p></div>
+            <button class="btn btn-default" id="cp1" onclick="copyToClipboard('#emess')">Copy</button>
+        </div>
+    </section>
+
+<div class="img2"></div>
+    <div id="section2">
+        
+        <section class="section section-part2">
+            <div class="row">
+                <div class="col-xs-12 col-md-offset-3 col-md-6 ">
+                    <div class="form-group">
+                        <label for="description"> Message to Decode</label>
+                        <textarea class="form-control" id="result" placeholder="Enter Your Message"></textarea><br>
+                        <input type="text" id="pass1" placeholder="Password">
+                        <div class="hidden-sm"><br></div>
+                        <button class="btn btn-primary" onclick="deco()">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-xs-12 col-md-offset-3 col-md-6"><p id="dmess">   </p></div></div>
+            <button class="btn btn-default" id="cp2" onclick="copyToClipboard('#dmess')">Copy</button>
+        </section>
+    </div>
+
+    <div id="section3">
+        <div class="img3">
+
+        </div>
+
+        <section class="section section-part3">
+            <p id="text12">
+                Hi<br>
+                This is a simple Encryption and Decryption app based on <a href="https://en.wikipedia.org/wiki/Caesar_cipher">Caesar cipher</a> it uses message and a password to encrypt the message.<br>
+                The message can be passed but can only be decoded with the password. Try it..... <br><br> 
+
+                Developed by :  <strong><a href="https://gauravsh02.github.io/">Gaurav Shankar</a> </strong><br>
+                Sugession  and feedback   <a href="mailto:gauravashankar.bk@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a> <a href="https://github.com/gauravsh02/"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </p>
+        </section>
+
+    </div>
+  
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/enc.js"></script>
+</body>
+
+</html>
